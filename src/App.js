@@ -41,7 +41,14 @@ export default function App() {
         if (isChecked) {
             setArrChip([...arrChip, name]);
         } else {
-            setArrChip(arrChip.filter(e => e !== name));
+            // setArrChip(arrChip.filter(e => e !== name));
+            setArrChip(arrChip.map(e => {
+                if (e === name) {
+                    return undefined
+                } else {
+                    return e;
+                }
+            }));
         }
     };
 
@@ -90,7 +97,7 @@ export default function App() {
                 />
             </FormGroup>
             {arrChip.map(ch => (
-                <ChipTest label={ch}/>
+                ch && <ChipTest label={ch}/>
             ))}
         </>
     );
