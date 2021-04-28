@@ -1,7 +1,8 @@
 # [Create React App](https://github.com/facebook/create-react-app) (CRA) 테스트 프로젝트 #
 
 리액트에서 배열을 통한 컴포넌트 렌더링 이 후 cleanUp Test
-> 해당 프로젝트는 테스트를 위해 생성하였습니다.
+> 해당 프로젝트는 Checkbox 와 Chip 을 이용하여 테스트를 실시하였습니다. 
+> 
 
 ### Installation
 ```
