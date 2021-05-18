@@ -20,6 +20,6 @@ npm start
 ```
 
 ## Notes
-* 컴포넌트 테스틑 위해 [material-ui](https://material-ui.com/) 를 활용.
+* 컴포넌트 테스트를 위해 [material-ui](https://material-ui.com/) 를 활용.
 * clean up 테스트를 위해 [notistack](https://iamhosseindhv.com/notistack) 을 통한 스낵바 라이브러리 활용.
 
