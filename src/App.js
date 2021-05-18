@@ -42,13 +42,15 @@ export default function App() {
             setArrChip([...arrChip, name]);
         } else {
             // setArrChip(arrChip.filter(e => e !== name));
-            setArrChip(arrChip.map(e => {
+            const newArrChip = arrChip.map(e => {
                 if (e === name) {
                     return undefined
                 } else {
                     return e;
                 }
-            }));
+            });
+
+            setArrChip(newArrChip.filter(e => e).length ===0 ? [] : newArrChip);
         }
     };
 
@@ -96,8 +98,8 @@ export default function App() {
                     label="테스트4"
                 />
             </FormGroup>
-            {arrChip.map(ch => (
-                ch && <ChipTest label={ch}/>
+            {arrChip.map((ch, idx) => (
+                ch && <ChipTest key={idx} label={ch}/>
             ))}
         </>
     );
